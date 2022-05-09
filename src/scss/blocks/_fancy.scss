@@ -1,0 +1,23 @@
+.carousel {
+  position: static;
+  --carousel-button-bg: rgba(239, 87, 21, 0.1);
+  --carousel-button-color: rgba(26, 10, 3, 0.7);
+  &__button {
+    width: var(--carousel-button-width, 48px);
+    height: var(--carousel-button-height, 48px);
+  }
+  &__button.is-prev,
+  &__button.is-next {
+    top: 25px;
+  }
+  &__button.is-prev {
+    left: auto;
+    right: 107px;
+  }
+  &__slide {
+    padding: 0;
+  }
+  &__dots {
+    display: none;
+  }
+}

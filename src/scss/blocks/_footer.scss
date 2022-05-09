@@ -1,0 +1,38 @@
+.footer {
+  background: rgba(238, 85, 20, 0.04);
+  padding: 100px 0 0 0;
+  &__wrapper {
+    padding-bottom: 40px;
+  }
+  &__col {
+    width: 25%;
+  }
+  &__title {
+    color: $black;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 0 35px;
+  }
+  .logo {
+    padding: 0;
+  }
+  &__list {
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  &__item {
+    padding: 5px 0;
+    font-size: 18px;
+  }
+  &__link:hover {
+    color: $orange;
+  }
+  &__contact {
+    padding-top: 5px;
+  }
+  &__txt {
+    padding: 5px 0 0 35px;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.26",
+    "swiper": "^8.1.4"
+  }
+}

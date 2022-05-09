@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  background: url("/src/img/bg-top.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  padding-top: 40px;
+  min-height: 649px;
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-holder {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    width: 95px;
+    margin-right: 80px;
+  }
+  &__swiper {
+    padding-top: 32px;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__link {
+    padding: 0 20px;
+    color: $global-font-color;
+    &:hover,
+    &:active {
+      color: $secondary-font-color;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $global-font-color;
+  font-size: $font-size-global;
+  font-family: $font-family-general;
+  font-weight: 400;
+  line-height: $line-height;
+  background-color: $global-bg;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  font-family: $font-family-title;
+  color: $black;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-size: 70px;
+  line-height: 1.1428;
+  text-align: center;
+}
+h2 {
+  font-size: 44px;
+}
+a {
+  text-decoration: none;
+  font-size: 11px;
+  color: $global-font-color;
+  font-size: $font-size-global;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.txt_orange {
+  color: $orange;
+}
+.txt_title {
+  font-family: $font-family-title;
+  letter-spacing: 0.05em;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  transition: all ease 0.3s;
+  // @include breakpoint(xl) {
+  //   max-width: 1140px;
+  // }
+  // @include breakpoint(md) {
+  //   max-width: 760px;
+  // }
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2;
+  color: $white;
+  padding: 11px 30px;
+  border-radius: 5px;
+  &_orange {
+    background: $orange;
+  }
+}
+
+.logo {
+  width: 95px;
+}
